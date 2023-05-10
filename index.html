@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PutaliDada Resort</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="photos/lo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Nepal's Best Resort</h1>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem.</p>
+            <a href=""class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    
+    <section class="services">
+        <h1>Services</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta excepturi deserunt accusantium nostrum voluptates minus non corrupti, recusandae labore iusto.</p>
+        
+        <div class="row">
+            <div class="services-col">
+                <h3>Home Delivery</h3>
+                <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus. sit amet consectetur adipisicing elit. Enim atque itaque aut excepturi ipsa deleniti pariatur quos. Accusamus, minima quod!</p>
+            </div>
+            <div class="services-col">
+                <h3>Beautiful View</h3>
+                <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus. sit amet consectetur adipisicing elit. Enim atque itaque aut excepturi ipsa deleniti pariatur quos. Accusamus, minima quod!</p>
+            </div>
+            <div class="services-col">
+                <h3>Healthy Food</h3>
+                <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minus. sit amet consectetur adipisicing elit. Enim atque itaque aut excepturi ipsa deleniti pariatur quos. Accusamus, minima quod!</p>
+            </div>
+        </div>
+    </section>
+    <!-- -----gallery------ -->
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dicta quas nam culpa temporibus nisi molestiae? Nihil porro repellendus praesentium!</p>
+
+        <div class="row">
+            <div class="gal-col">
+                <img src="photos/aa.jpeg" alt="photos">
+                <div class="layer">
+                    <h3>Building</h3>
+                </div>
+            </div>
+            <div class="gal-col">
+                <img src="photos/dec.png" alt="photos">
+                <div class="layer">
+                    <h3>Decoration</h3>
+                </div>
+            </div>
+            <div class="gal-col">
+                <img src="photos/view.jpg" alt="photos">
+                <div class="layer">
+                    <h3>View</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <h1>Review</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, dicta quas nam culpa temporibus nisi molestiae? Nihil porro repellendus praesentium!</p>
+        
+        <div class="row">
+            <div class="rev-col">
+                <img src="photos/user1.jpg" >
+                <div>
+                    <p>Superb! Resort</p>
+                    <h3>Don Buda</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="rev-col">
+                <img src="photos/user2.jpg" >
+                <div>
+                    <p>Very nice resort.</p>
+                    <h3>Bijay Shrestha</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ---Call to Acton--- -->
+    <section class="cta">
+        <h1>Visit Our Resort To Enjoy <br> The Nature And Food</h1>
+        <a href="" class="hero-btn">Contact Us</a>
+    </section>
+
+
+    <!-- ------JavaScript for tuggle menu---- -->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    
+    <!-- ---Footer--- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consectetur! Eligendi voluptatem cumque libero, nobis voluptates, neque id, <br> maxime perferendis temporibus cupiditate ipsa labore repellat sit corporis laborum! Sed, impedit.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Jeevan Shrestha</p>
+    </section>
+
+</body>
+</html>
